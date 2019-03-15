@@ -7,14 +7,6 @@ define(["sugar-web/activity/activity","sugar-web/env", "worldpalette", "viewpale
 		activity.setup();
 
 
-		//Set background color to user color
-		var canvas = document.getElementById("canvas");
-		var canvasColor;
-		activity.getXOColor(function(error, retcolors){
-			canvasColor = retcolors;
-		});
-
-		canvas.style.backgroundColor = canvasColor["fill"];
 
 		var datastoreObject = activity.getDatastoreObject();
 
